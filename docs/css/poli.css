@@ -150,6 +150,7 @@ button:hover{
     text-align: center;
 }
 
+/* mudo o formato da imagem no scroll */
 #mensagem-scroll {
     display: none;
     position: fixed;
@@ -169,3 +170,35 @@ button:hover{
     height: auto;
     display: block;
 }
+
+/* altera as cores no modo esuro e modo claro */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .header {
+    background-color: #333;
+}
+
+body.dark-mode .news-article,
+body.dark-mode fieldset {
+    background-color: #222;
+    box-shadow: 0 5px 15px -6px #000;
+}
+
+body.dark-mode .news-article-link,
+body.dark-mode button,
+body.dark-mode .header-nav a {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .news-article-link:hover,
+body.dark-mode button:hover,
+body.dark-mode .header-nav a:hover {
+    outline: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
